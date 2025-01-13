@@ -6,15 +6,16 @@ import {ScrollShadow} from "@nextui-org/react";
 export default function Search() {
 
     const [titles,setTitles] = useState([]);
-
+    const apiKey = String(import.meta.env.VITE_API_KEY);
+    const host = String(import.meta.env.VITE_HOST);
     
     const findMovie = async (query) => {
         const url = `https://movies-api14.p.rapidapi.com/search?query=${query}`;
         const options = {
             method: 'GET',
             headers: {
-                'x-rapidapi-key': '26a892c114msh45c877780a40adep1ae7cajsn6c84d7c9957d',
-                'x-rapidapi-host': 'movies-api14.p.rapidapi.com'
+                'x-rapidapi-key': `${apiKey}`,
+                'x-rapidapi-host': `${host}`
             }
         };
         
@@ -37,7 +38,6 @@ export default function Search() {
         const value = e.target.value;
         setTitles([])
         if (e.target.value.length === 0) {
-            // Reset stations list when input is cleared
             setTitles([]);
         } else if (e.target.value.length > 1) {
             findMovie(value)
