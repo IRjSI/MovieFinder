@@ -49,7 +49,7 @@ export default function Search() {
             <div className='flex justify-center items-center flex-col'>
 
             <h2 className='text-center mt-8 hover:text-gray-300 hover:cursor-default'>Movies Finder</h2>
-            <img className='w-24' src="src\assets\underline.svg" />
+            {/* <img className='w-24' src="src\assets\underline.svg" /> */}
 
                 <div className="w-[340px] h-[140px] px-8 rounded-2xl flex justify-center items-center text-white">
 
@@ -116,7 +116,7 @@ export default function Search() {
                         </ul>
                     ) : null}
                 </div>
-            <p className='flex'>Made with <img className='w-6' src="src\assets\heart.svg"/></p>
+            <p className='flex'>Made with 💖</p>
             </div>
         </div>
     );
