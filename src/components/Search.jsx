@@ -116,7 +116,7 @@ export default function Search() {
                         </ul>
                     ) : null}
                 </div>
-            <p>Made with 💖</p>
+            <p className='flex'>Made with <img className='w-6' src="src\assets\heart.svg"/></p>
             </div>
         </div>
     );
