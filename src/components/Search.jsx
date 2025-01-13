@@ -47,7 +47,11 @@ export default function Search() {
     return (
         <div className="min-h-screen dark:bg-background bg-background">
             <div className='flex justify-center items-center flex-col'>
-                <div className="w-[340px] h-[240px] px-8 rounded-2xl flex justify-center items-center text-white">
+
+            <h2 className='text-center mt-8 hover:text-gray-300 hover:cursor-default'>Movies Finder</h2>
+            <img className='w-24' src="src\assets\underline.svg" />
+
+                <div className="w-[340px] h-[140px] px-8 rounded-2xl flex justify-center items-center text-white">
 
                 {/* <form> */}
                     <Input
