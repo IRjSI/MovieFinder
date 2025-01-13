@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <NextUIProvider attribute="class" defaultTheme="dark">
+    <NextUIProvider attribute="class">
       <main className="dark min-h-screen transition-none text-foreground bg-background">
         <App />
       </main>
